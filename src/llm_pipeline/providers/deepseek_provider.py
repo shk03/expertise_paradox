@@ -24,10 +24,12 @@ def generate_diagnosis(
 ) -> DeepSeekDiagnosis:
     prompt = f"""You are an experienced neuroradiologist.
 
-Below is a case presentation. Based on this information, provide your top three differential diagnoses ranked in order of likelihood.
+Below is a case presentation including patient demographics, relevant clinical history, and brain MRI findings. Based on this information, provide your top three differential diagnoses ranked in order of likelihood.
 
 CASE:
 {case_description}
+
+For each differential diagnosis, briefly explain your reasoning.
 
 First, show your chain of thought enclosed in <think>…</think>.  
 Then output exactly one JSON object matching this schema:

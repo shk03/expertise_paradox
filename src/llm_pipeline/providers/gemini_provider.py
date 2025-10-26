@@ -24,10 +24,12 @@ def generate_diagnosis(
 ) -> GeminiDiagnosis:
     prompt = f"""You are an expert neuroradiologist.
 
-Below is a case presentation. Based on this, provide your top three differential diagnoses.
+Below is a case presentation including patient demographics, relevant clinical history, and brain MRI findings. Based on this information, provide your top three differential diagnoses ranked in order of likelihood.
 
 CASE:
 {case_description}
+
+For each differential diagnosis, briefly explain your reasoning.
 
 Output your response ONLY as a single JSON object matching this schema. Do not include any extra text or markdown formatting like ```json ... ```.
 
