@@ -1,6 +1,7 @@
 # The Expertise Paradox: Who Benefits from LLM-Assisted Brain MRI Differential Diagnosis?
 
 Official implementation by the [HAIM Lab (Human-Centered AI in Medicine)](https://www.neurokopfzentrum.med.tum.de/neuroradiologie/forschung_projekt_haim.html) of the Technical University of Munich (TUM).
+
 Contact: Dr. med. Su Hwan Kim (suhwan.kim@tum.de), Institute of Diagnostic and Interventional Radiology, Technical University of Munich (TUM)
 
 ## Overview
